@@ -25,4 +25,3 @@ function checkAnswer(selected) {
         resultDiv.className = "result wrong";
     }
 }
-
