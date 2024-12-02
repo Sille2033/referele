@@ -10,15 +10,10 @@
     <div class="quiz-container">
         <h1>Video Quiz</h1>
         <div class="video-container">
-            <iframe 
-                id="quizVideo" 
-                width="640" 
-                height="360" 
-                src="https://www.youtube.com/embed/S0dQ4Kj-Cb4" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
+            <video id="quizVideo" width="640" controls>
+                <source src="https://raw.githubusercontent.com/<username>/<repository>/<branch>/<path-to-video>/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
         <div class="options-container">
             <button class="option" onclick="checkAnswer(1)">Option 1</button>
