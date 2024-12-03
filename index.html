@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="header">
+        <div class="icon">👤</div>
+        <h1>🌍 WOR<span class="highlight">LD</span>LE</h1>
+        <div class="icon">📊</div>
+    </div>
     <div class="quiz-container">
-        <h1>Video Quiz</h1>
         <div class="video-container">
             <video id="quizVideo" width="640" controls>
-                <!-- Correct GitHub raw URL -->
                 <source src="https://raw.githubusercontent.com/Sille2033/referele/main/tackle.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="options-container">
-            <button class="option" onclick="checkAnswer(1)">Option 1</button>
-            <button class="option" onclick="checkAnswer(2)">Option 2</button>
-            <button class="option" onclick="checkAnswer(3)">Option 3</button>
-            <button class="option" onclick="checkAnswer(4)">Option 4</button>
+            <button class="option" onclick="checkAnswer(1)">OPTION 1</button>
+            <button class="option" onclick="checkAnswer(2)">OPTION 2</button>
+            <button class="option" onclick="checkAnswer(3)">OPTION 3</button>
+            <button class="option" onclick="checkAnswer(4)">OPTION 4</button>
         </div>
         <div id="result" class="result"></div>
     </div>
