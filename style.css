@@ -1,61 +1,86 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1b2a;
+    color: #ffffff;
 }
 
-.quiz-container {
-    margin: 50px auto;
-    padding: 20px;
-    max-width: 700px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1b263b;
+    border-bottom: 2px solid #415a77;
 }
 
-h1 {
+.header h1 {
+    margin: 0;
     font-size: 24px;
-    color: #333;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header h1 .highlight {
+    color: #4caf50;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+/* Quiz Container */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .video-container {
     margin: 20px 0;
+    background-color: #e0e1dd;
+    padding: 10px;
+    border: 2px solid #415a77;
+    border-radius: 8px;
 }
 
 .options-container {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
 }
 
 .option {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #415a77;
     border: none;
     border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
+    text-align: center;
 }
 
 .option:hover {
-    background-color: #0056b3;
+    background-color: #4caf50;
+    color: white;
 }
 
 .result {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
-    color: #333;
 }
 
-.correct {
-    color: green;
-}
-
-.wrong {
-    color: red;
+/* Video Container */
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
