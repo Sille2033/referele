@@ -1,12 +1,9 @@
-function checkAnswer(selected) {
-    const correctAnswer = 2; // Set the correct answer index (1-4)
-    const resultDiv = document.getElementById('result');
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", () => {
+    const heading = document.getElementById("hello-world");
+    
+    // Ensure the heading is centered properly
+    console.log("Hello World element loaded:", heading);
 
-    if (selected === correctAnswer) {
-        resultDiv.textContent = 'Correct! 🎉';
-        resultDiv.style.color = 'green';
-    } else {
-        resultDiv.textContent = `Wrong! The correct answer was Option ${correctAnswer}.`;
-        resultDiv.style.color = 'red';
-    }
-}
+    // Additional functionality could go here
+});
