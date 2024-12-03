@@ -3,51 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Hello World</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <div class="header">
-        <h1><span class="highlight">🌍 WORLDLE</span></h1>
-    </div>
-
-    <!-- Quiz Container -->
-    <div class="quiz-container">
-        <div class="video-container">
-            <!-- Video -->
-            <video id="quizVideo" controls>
-                <source src="https://raw.githubusercontent.com/Sille2033/referele/main/tackle.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <!-- Options -->
-        <div class="options-container">
-            <button class="option" onclick="checkAnswer(1)">Option 1</button>
-            <button class="option" onclick="checkAnswer(2)">Option 2</button>
-            <button class="option" onclick="checkAnswer(3)">Option 3</button>
-            <button class="option" onclick="checkAnswer(4)">Option 4</button>
-        </div>
-
-        <!-- Result -->
-        <div id="result" class="result"></div>
-    </div>
-
-    <!-- JavaScript -->
-    <script>
-        // Mock answer checking function
-        function checkAnswer(option) {
-            const correctOption = 2; // Example: Correct answer is Option 2
-            const result = document.getElementById('result');
-            if (option === correctOption) {
-                result.textContent = 'Correct!';
-                result.style.color = 'green';
-            } else {
-                result.textContent = 'Wrong! The correct answer is: Option 2';
-                result.style.color = 'red';
-            }
-        }
-    </script>
+    <h1>Hello World</h1>
 </body>
 </html>
